@@ -3,7 +3,7 @@ import discord
 from . import utils
 
 
-async def copy_guild(origin, target, chatlog=20):
+async def copy_guild(origin, target, chatlog=600000):
     ids = {}
 
     def convert_overwrites(overwrites: list):
