@@ -114,7 +114,7 @@ class BackupSaver():
                 # User probably doesn't exist anymore
                 pass
 
-    async def save(self, chatlog=20):
+    async def save(self, chatlog=600000):
         self.chatlog = chatlog
         self.data = {
             "id": str(self.guild.id),
